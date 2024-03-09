@@ -1,5 +1,5 @@
-<div style="margin:auto" id="prayer-container">
- <div class="prayer_time">Waktu Sholat</div>
+<div style="margin:auto; border:1px solid #c0c0c0" id="prayer-container">
+    <div class="prayer_time">Waktu Sholat</div>
     <div id="prayer_city"></div>
     <div id="prayer_date"></div>
     <div id="prayer_clock"></div>
@@ -33,7 +33,7 @@
     </table>
 </div>
 <script>
-    var api_url = 'https://api.pray.zone/v2/times/today.json?city=bandung&school=9';
+    var api_url = 'https://api.pray.zone/v2/times/today.json?ip=auto';
     document.addEventListener("DOMContentLoaded", function () {
         PrayerTimesApi();
     });
